@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Recommendation System</title>
+  <link rel="stylesheet" href="Movie.css">
+</head>
+<body>
+  <section class="project-container">
+    <h1>Movie Recommendation System</h1>
+
+    <h2>Project Overview</h2>
+    <p>This project is a content-based movie recommendation system developed using Python. It suggests movies based on genre similarity using TF-IDF vectorization and cosine similarity techniques, widely used in natural language processing (NLP).<br><br>
+    Tools Used: Python, Pandas, Scikit-learn<br>
+    Algorithm: TF-IDF + Cosine Similarity<br>
+    Dataset: Custom movie dataset (finalfile.csv)
+    </p>
+    <img src="images/Movie_img/movie1.png" alt="Sample Dataset Screenshot">
+    <div class="center-link">
+    <a href="Datasets/Movie_Data/finalfile.csv" target="_blank">View Dataset</a>
+    </div>
+
+    <h2>Objective</h2>
+    <p>To help users discover movies similar to the ones they already enjoy — saving time and improving discovery. This was achieved by comparing genre metadata across all movies.</p>
+    <pre><code># Preprocess the data
+tfidf_vectorizer = TfidfVectorizer(stop_words='english')
+movies['Genres'] = movies['Genres'].fillna('')
+tfidf_matrix = tfidf_vectorizer.fit_transform(movies['Genres'])
+    </code></pre>
+
+    <h2>How the System Works</h2>
+    <ol>
+      <li><strong>Data Loading:</strong> Loads a dataset (finalfile.csv) with movie titles and genres.</li>
+      <li><strong>Text Vectorization:</strong> Applies TF-IDF to convert genres into numeric vectors.</li>
+      <li><strong>Cosine Similarity:</strong> Calculates similarity scores between movies.</li>
+      <li><strong>Recommendation:</strong> Based on a user-selected title, it returns 10 similar movies.</li>
+    </ol>
+    <img src="images/Movie_img/movie2.png" alt="Cosine Similarity Visualization">
+
+    <h2>Core Code Snippet</h2>
+    <pre><code>def get_recommendations(Movies, cosine_sim=cosine_sim):
+    idx = movies.loc[movies['Movies'] == Movies].index[0]
+    sim_scores = list(enumerate(cosine_sim[idx]))
+    sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
+    sim_scores = sim_scores[1:11]
+    movie_indices = [i[0] for i in sim_scores]
+    return movies['Movies'].iloc[movie_indices]
+    </code></pre>
+    <img src="images/Movie_img/movie3.png" alt="Output Screenshot">
+
+    <h2>Results</h2>
+    <p>The system successfully recommends genre-similar movies. <br><br>
+    <strong>Example Input:</strong> Total Dhamaal <br>
+    <strong>Output:</strong> 10 similar action-comedy films.</p>
+
+    <h2>Learnings</h2>
+    <ul>
+      <li>Applied TF-IDF for text feature extraction.</li>
+      <li>Worked with cosine similarity for pairwise comparison.</li>
+      <li>Understood content-based filtering vs collaborative filtering.</li>
+    </ul>
+
+    <h2>Summary Table</h2>
+    <table>
+      <tr><td>Project Type</td><td>Content-Based Movie Recommendation</td></tr>
+      <tr><td>Key Algorithm</td><td>TF-IDF + Cosine Similarity</td></tr>
+      <tr><td>Input</td><td>Movie Title</td></tr>
+      <tr><td>Output</td><td>Top 10 Genre-Similar Movies</td></tr>
+      <tr><td>Libraries Used</td><td>Pandas, Scikit-learn, NumPy</td></tr>
+      <tr><td>Dataset Columns</td><td>Title, Genre, Cast, Director, etc.</td></tr>
+    </table>
+
+    <br>
+    <a href="../Portfolio.html" class="back-btn">⬅ Back to Portfolio</a>
+  </section>
+
+  <img src="images/Avatar.jpeg" alt="Avatar" class="avatar-icon" />
+</body>
+</html>

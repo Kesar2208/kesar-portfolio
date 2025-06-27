@@ -1,0 +1,130 @@
+body {
+  background-color: #1C1C1C;
+  font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1{
+  border-bottom: 5px dotted #ff5500;
+  padding-bottom: 0.5rem;
+  font-size: 34px;
+}
+
+h2 {
+  border-bottom: 2px solid #FFD700;
+  padding-bottom: 0.5rem;
+}
+
+h1, h2 {
+  color: #FFD700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-container {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #2E2E2E;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+.project-container h2,
+.project-container h3 {
+  color: #FFD700;
+  text-align: center;
+}
+
+.project-container p,
+.project-container ul,
+.project-container ol {
+  font-size: 1rem;
+}
+
+.project-container img {
+  max-width: 100%;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  border: 2px solid #444;
+}
+
+.project-container ul,
+.project-container ol {
+  padding-left: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  background-color: #333;
+  color: #fff;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #555;
+}
+
+th {
+  background-color: #444;
+  color: #FFD700;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #FF6B00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.back-btn:hover {
+  background-color: #E55300;
+}
+
+.avatar-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #FFD700;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+.center-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.center-link a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.center-link a:hover {
+  background-color: white;
+  color: #2e2e2e;
+}
+
+.highlight-orange {
+  color: #FF6B00;
+}

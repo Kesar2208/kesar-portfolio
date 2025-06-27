@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 3 – Analyzing Amazon Sales Data</title>
+  <link rel="stylesheet" href="Amazon.css" />
+</head>
+<body>
+
+  <section class="project-container">
+    <h1>Analyzing Amazon Sales Data</h1>
+
+    <h2>Project Overview</h2>
+    <p>This project, titled "Analyzing Amazon Sales data," involved a deep dive into Amazon's sales data to uncover key performance indicators (KPIs), identify trends, and discover opportunities to optimize profitability across various product types, regions, and countries. Sales management is a crucial function in commercial enterprises today, essential for meeting increased competition and improving distribution methods to reduce costs and boost profits. The project aimed to provide actionable insights for sales management to develop a clear strategy for sustained growth. This data analytics project falls under the "E-commerce" domain and is classified as "Advanced" in difficulty.<br><br>
+    Tools Used: Tableau<br>
+    My Role: Data Analyst
+    </p>
+    <img src="images/Amazon_img/amazon9.png" alt="Dashboard1" />
+    <img src="images/Amazon_img/amazon10.png" alt="Dashboard2" />
+
+    <h2>Objective</h2>
+    <p>The core business problem addressed by this project is the need for effective sales management to navigate increasing competition and improve distribution methods, ultimately aiming to reduce costs and increase profits.<br><br>
+    The primary objectives of this analysis were to:</p>
+    <ul>
+      <li> Perform ETL on an Amazon dataset.</li>
+      <li> Identify sales trends (month-wise, year-wise, yearly-month-wise).</li>
+      <li> Find key metrics and factors related to sales performance.</li>
+      <li> Show meaningful relationships between attributes in the dataset.</li>
+      <li> Uncover opportunities to optimize profitability across product types, regions, and countries.</li>
+      <li> Explore total costs per sale and country-specific profit margins.</li>
+      <li> Develop a clear strategy to drive sustained growth.</li>
+    </ul>
+
+    <h2>Dataset Description</h2>
+    <p>The analysis was performed on an Amazon sales dataset. The dataset is accessible via a provided link for download. The specific features and granularity of the dataset are inferred from the analysis objectives, including information necessary to determine:</p>
+    <ul>
+      <li> Sales trends over time (years and months).</li>
+      <li> Costs and profits at an item level and country level.</li>
+      <li> Data by item type (e.g., Cosmetics, Household, Office Supplies, Baby Food, etc.).</li>
+      <li> Regional and country-wise profit distribution.</li>
+      <li> Total units sold, total cost, total items, total amount, average total revenue, and average total profit.</li>
+    </ul>
+    <div class="center-link">
+    <a href="https://drive.google.com/file/d/10sofXyF6NjwN6ngLyFfiPI-CUDpeqaN_/view?usp=sharing" target="_blank">View Dataset</a>
+    <!-- <a href="Datasets/Amazon_Data/Amazon Sales data.csv" target="_blank">View Dataset</a> -->
+    </div>
+
+    <h2>Step-by-Step Approach Taken</h2>
+    <ol>
+      <li><strong>Data Acquisition:</strong> The Amazon sales dataset was obtained from the provided link.</li>
+      <li><strong>ETL (Extract, Transform, Load) (Python):</strong><br>
+        o Extract: Retrieving raw sales data from the source.<br>
+        o Transform: Cleaning the data, handling missing values, standardizing formats, and possibly creating new features or aggregating data for analysis. This includes preparing data to analyze sales trends month-wise, year-wise, and yearly-month-wise.<br>
+        o Load: Loading the processed data into a format suitable for visualization tools like Tableau.</li>
+      <li><strong>KPI Definition and Calculation:</strong><br>
+        o Calculated Revenue Growth<br>
+        o Determined Profit Margins<br>
+        o Analyzed Customer Acquisition<br>
+        o Calculated Inventory Turnover</li>
+      <li><strong>Exploratory Data Analysis (EDA):</strong> Identify distributions, trends, and outliers.</li>
+      <li><strong>Dashboard Design & Visualization (Tableau):</strong></li>
+      <ul>
+        <li> Year-wise total cost, total profit, and total revenue (Image 2)</li>
+        <li> Item type total cost and total profit (Image 3)</li>
+        <li> Item-wise profit (Image 4)</li>
+        <li> Region-wise profit (Image 5)</li>
+        <li> Country-wise profit map (Image 6)</li>
+        <li> Total cost of items per sales channel (Image 7)</li>
+      </ul>
+      <li><strong>Insight Generation & Recommendations:</strong> Final interpretations and strategic suggestions.</li>
+    </ol>
+
+    <h2>Key Metrics Tracked</h2>
+    <ul>
+      <li> Revenue Growth</li>
+      <li> Profit Margins</li>
+      <li> Customer Acquisition</li>
+      <li> Inventory Turnover</li>
+      <li> Total Units Sold</li>
+      <li> Total Cost</li>
+      <li> Total Items</li>
+      <li> Total Amount</li>
+      <li> Average Total Revenue</li>
+      <li> Average Total Profit</li>
+      <li> Sales Trends</li>
+      <li> Regional and Country-wise Profit</li>
+      <li> Item Type Profitability</li>
+      <li> Cost Per Sales Channel</li>
+    </ul>
+
+    <h2>Chart Descriptions</h2>
+    <ul>
+      <p><strong><span class="highlight-orange">Overall Sales Metrics (KPI Cards):</span></strong> Displays key aggregated figures such as AVG Unit Sold , AVG Total Cost, Total Item, Total Amount, AVG Total Revenue, and AVG Total Profit.</p>
+      <img src="images/Amazon_img/amazon2.png" alt="KPI Cards and Amazon logo overview" /> 
+      <p><strong><span class="highlight-orange">Year-wise Total Cost, Total Profit, Total Revenue:</span></strong> A stacked or grouped bar chart showing the breakdown of total cost, total profit, and total revenue for each year, allowing for easy comparison of financial performance over time.</p>
+      <img src="images/Amazon_img/amazon3.png" alt="Year-wise Total Cost, Total Profit, Total Revenue" /> 
+      <p><strong><span class="highlight-orange"> Item Type Total Cost & Total Profit:</span></strong> This chart visualizes the total cost and total profit for each item type (e.g., Baby Food, Beverages, Cereal, Clothes, Cosmetics, Fruits, Household, Meat, Office Supplies, Personal Care, Snacks, Vegetables). This helps identify the profitability of different product categories.</p>
+      <img src="images/Amazon_img/amazon4.png" alt="Item Type Total Cost & Total Profit" /> 
+      <p><strong><span class="highlight-orange">Item Wise Profit: </span></strong>A line chart illustrating the profit generated by each individual item type. This provides a clear view of the most and least profitable items. </p>
+      <img src="images/Amazon_img/amazon5.png" alt="Item Wise Profit" /> 
+      <p><strong><span class="highlight-orange"> Region Wise Profit :</span></strong> A pie chart showing the distribution of profit across different regions, such as Sub-Saharan Africa, Asia, Australia and Oceania, Central America and the Caribbean, Europe, Middle East and North Africa, and North America. This immediately highlights top-contributing regions .</p>
+      <img src="images/Amazon_img/amazon6.png" alt="Region Wise Profit (Pie Chart)" /> 
+      <p><strong><span class="highlight-orange">Country wise Profit: </span></strong> A world map showing profit distribution by country, allowing for visual identification of strong and weak markets geographically.</p>
+      <img src="images/Amazon_img/amazon7.png" alt="Country wise Profit (Map)" /> 
+      <p><strong><span class="highlight-orange">Total Cost per Sales Channel: </span></strong>Compares the total cost of items sold through 'Offline' versus 'Online' sales channels. This provides insights into channel efficiency and cost structures. </p>
+      <img src="images/Amazon_img/amazon8.png" alt="Total Cost per Sales Channel (Bar Chart)" /> 
+    </ul>
+
+    <h2>Insights and Final Recommendations</h2>
+    <ul>
+      <li> Healthy average profit and revenue trends</li>
+      <li> High-growth regions: Sub-Saharan Africa, Europe, Asia</li>
+      <li> High-profit item types: Cosmetics, Household, Office Supplies</li>
+      <li> Channel comparison for cost-effectiveness</li>
+    </ul>
+
+    <h2>Summary Table</h2>
+    <table>
+      <tr><td>Project Title</td><td>Analyzing Amazon Sales Data</td></tr>
+      <tr><td>Technologies Used</td><td>Python, Tableau</td></tr>
+      <tr><td>My Role</td><td>Data Analyst</td></tr>
+      <tr><td>Business Problem</td><td>Sales optimization amidst competition and distribution challenges</td></tr>
+      <tr><td>Objective</td><td>Analyze trends, metrics, relationships, and optimize sales</td></tr>
+      <tr><td>Dataset(s)</td><td>Amazon Sales Dataset</td></tr>
+      <tr><td>Key Metrics</td><td>Revenue, Profit, Trends, Customer, Cost</td></tr>
+      <tr><td>Approach</td><td>ETL + Tableau Dashboards</td></tr>
+      <tr><td>Insights</td><td>Profit drivers by region/item/channel</td></tr>
+      <tr><td>Recommendations</td><td>Improve strategy for sustainable growth</td></tr>
+      <tr><td>Learning Outcomes</td><td>ETL, KPI analysis, dashboard storytelling</td></tr>
+    </table>
+
+    <br>
+    
+    <a href="../Portfolio.html" class="back-btn">⬅ Back to Portfolio</a>
+  </section>
+
+  <img src="images/Avatar.jpeg" alt="Avatar" class="avatar-icon" />
+
+</body>
+</html>

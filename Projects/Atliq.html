@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AtliQ Hospitality Data Analysis</title>
+  <link rel="stylesheet" href="Atliq.css">
+</head>
+<body>
+  <section class="project-container">
+    <h1>AtliQ Hospitality Data Analysis</h1>
+
+    <h2>Project Overview</h2>
+    <p>AtliQ Grands, a chain of five-star hotels across India with 20 years in the hospitality industry, has been experiencing a decline in market share and revenue due to competitor strategies and ineffective management decisions. To counteract this, the managing director initiated a strategic move to integrate "Business and Data Intelligence" into their operations. This project, "AtliQ Hospitality Analysis," was undertaken by a third-party service provider to provide crucial insights from historical data, as AtliQ Grands lacks an in-house data analytics team. The project aims to empower AtliQ Grands with data-driven decision-making to regain its market position and boost revenue in the luxury/business hotel category. This data analytics project falls under the "Travel and Tourism" domain and is classified as "Advanced" in difficulty.<br><br>
+    Tools Used: Tableau, Excel<br>
+    My Role: Data Analyst</p>
+    <img src="images/Atliq_img/atliq9.png" alt="Dashboard1" />
+    <img src="images/Atliq_img/atliq10.png" alt="Dashboard2" />
+    <img src="images/Atliq_img/atliq11.png" alt="Dashboard3" />
+
+    <h2>Objective</h2>
+    <p>The core business problem faced by AtliQ Grands was the loss of market share and revenue in the luxury/business hotels category due to competitive pressures and internal decision-making shortcomings. The primary objective of this project was to leverage "Business and Data Intelligence" to address this challenge.</p>
+    <ul>
+      <li>To provide actionable insights from AtliQ Grands' historical data to their revenue management team.</li>
+      <li>To analyze key metrics such as Revenue, Occupancy Rate, and Average Rating across various properties, cities, and booking statuses.</li>
+      <li>To identify trends in revenue by day type (weekday/weekend) and city.</li>
+      <li>To understand successful booking patterns by city and day type and analyze conversion rates.</li>
+      <li>To develop an interactive dashboard that allows filtering by properties, city, status, platform, month, and week to facilitate granular analysis.</li>
+    </ul>
+
+    <h2>Dataset Description</h2>
+    <p>The analysis relied on AtliQ Grands' historical data. While the specific structure and content of the datasets are not fully detailed in the provided documents, it is implied that the data includes:</p>
+    <ul>
+      <li>Booking information: platform, room class, category, city, day type, and week number.</li>
+      <li>Financial data: including revenue figures.</li>
+      <li>Performance metrics: rating, cancellation rate, occupancy rate, bookings, capacity.</li>
+      <li>Property-specific data: individual hotel performance data.</li>
+    </ul>
+    <div class="center-link">
+    <a href="https://drive.google.com/file/d/1FPX4BRHugOnf3mOJKjNCbjIasGNKwoID/view?usp=sharing" target="_blank">View Dataset</a>
+    <!-- <a href="Datasets/Atliq_Data/" target="_blank">View Dataset</a> -->
+    </div>
+
+    <h2>Step-by-Step Approach Taken</h2>
+    <ol>
+      <li>Data Acquisition</li>
+      <li>Data Cleaning and Transformation (Python)</li>
+      <li>KPI Definition and Calculation</li>
+      <li>Exploratory Data Analysis (EDA)</li>
+      <li>Dashboard Design and Development (Tableau)</li>
+      <li>Insight Generation and Recommendations</li>
+    </ol>
+
+    <h2>Key Metrics Tracked</h2>
+    <ul>
+      <li>Revenue</li>
+      <li>Average Rating</li>
+      <li>Occupancy Rate</li>
+      <li>Cancellation Rate</li>
+      <li>Total Bookings</li>
+      <li>Total Capacity</li>
+      <li>Successful Bookings</li>
+      <li>Revenue by Day Type and City</li>
+      <li>Conversion Rates</li>
+    </ul>
+
+    <h2>Chart Descriptions</h2>
+    <ul>
+      <p><strong><span class="highlight-orange">Overall Sales Metrics (KPI Cards):</span></strong> Displays vital metrics such as Revenue, Average Rating, Cancellation Rate , and Occupancy. Also includes Total Cancelled Bookings , Total Bookings, Total Capacity, and Total Successful Bookings .  </p>
+      <img src="images/Atliq_img/atliq1.png" alt="KPI Cards (Revenue, Avg Rating, Cancellation Rate, Occupancy)" /> 
+      <p><strong><span class="highlight-orange">Revenue by Day Type:</span></strong> Shows trends in revenue over different weeks, distinguishing between different day types (e.g., weekday vs. weekend revenue patterns). This helps in understanding weekly fluctuations and peak periods. </p>
+      <img src="images/Atliq_img/atliq2.png" alt="Revenue by Day Type (Line Chart)" /> 
+      <p><strong><span class="highlight-orange">Average Rating by City:</span></strong> Visualizes the average guest satisfaction rating for each city where AtliQ Grands has properties, enabling comparison of guest experience across locations. </p>
+      <img src="images/Atliq_img/atliq3.png" alt=" Average Rating by City (Bar Chart)" /> 
+      <p><strong><span class="highlight-orange">Revenue by City:</span></strong> Illustrates the proportion of total revenue contributed by each city (Bangalore, Delhi, Hyderabad, Mumbai), highlighting top-performing locations. </p>
+      <img src="images/Atliq_img/atliq4.png" alt="Revenue by City (Pie Chart)" /> 
+      <p><strong><span class="highlight-orange">Revenue by Room Class and Category :</span></strong> Shows revenue generated by different room classes (Elite, Premium, Presidential, Standard) and potentially sub-categories within them, helping to identify which room types are most profitable. </p>
+      <img src="images/Atliq_img/atliq5.png" alt="Revenue by Room Class and Category (Bar Chart)" /> 
+      <p><strong><span class="highlight-orange">Revenue by Room Class:</span></strong> Provides an overview of revenue distribution across different room classes. </p>
+      <img src="images/Atliq_img/atliq6.png" alt="Revenue by Room Class (Area Chart)" /> 
+      <p><strong><span class="highlight-orange">Revenue by Property Name:</span></strong> Displays revenue performance for each individual AtliQ property (e.g., Atliq Bay, Atliq Blu, Atliq City, Atliq Exotica, Atliq Grands, Atliq Palace, Atliq Seasons), facilitating property-level performance evaluation. </p>
+      <img src="images/Atliq_img/atliq7.png" alt="Revenue by Property Name (Bar Chart)" /> 
+      <p><strong><span class="highlight-orange">Cancelled & Successful Booking By City:</span></strong> Compares cancelled versus successful bookings for different room classes (Elite, Premium, Presidential, Standard) across cities (Bangalore, Delhi, Hyderabad, Mumbai). This is crucial for understanding reasons for revenue loss and optimizing booking strategies. </p>
+      <img src="images/Atliq_img/atliq8.png" alt="Cancelled & Successful Booking By City (Bar Chart)" /> 
+    </ul>
+
+    <h2>Insights and Final Recommendations</h2>
+    <ul>
+      <li>Revenue is strong, but cancellation rates are high.</li>
+      <li>Performance varies greatly by city and property.</li>
+      <li>Room classes show different profit contributions.</li>
+      <li>Booking trends differ by day type, allowing for strategic pricing.</li>
+    </ul>
+
+    <h2>Summary Table</h2>
+    <table>
+      <tr><td>Project Title</td><td>AtliQ Hospitality Analysis</td></tr>
+      <tr><td>Tools Used</td><td>Tableau, Excel</td></tr>
+      <tr><td>My Role</td><td>Data Analyst</td></tr>
+      <tr><td>Business Problem</td><td>Loss of market share & revenue</td></tr>
+      <tr><td>Objective</td><td>Use data insights to regain market leadership</td></tr>
+      <tr><td>Dataset(s)</td><td>Historical hotel performance and bookings</td></tr>
+      <tr><td>Key Metrics</td><td>Revenue, Rating, Occupancy, Cancellations</td></tr>
+      <tr><td>Approach</td><td>ETL, KPI, Dashboarding, Insights</td></tr>
+      <tr><td>Insights</td><td>Revenue drivers, cancellation impact, room class strategy</td></tr>
+      <tr><td>Learning Outcomes</td><td>Domain expertise, visualization, KPI handling</td></tr>
+    </table>
+    <br>
+    <a href="../Portfolio.html" class="back-btn">⬅ Back to Portfolio</a>
+  </section>
+
+  <img src="images/Avatar.jpeg" alt="Avatar" class="avatar-icon" />
+</body>
+</html>
