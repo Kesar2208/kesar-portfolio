@@ -7,15 +7,9 @@ Welcome to my personal developer portfolio!
 This responsive website highlights my work in \*\*Web Development\*\*, \*\*Data Analytics\*\*, \*\*Machine Learning\*\*, and \*\*UI/UX Design\*\* — all built and presented with clarity, structure, and purpose.
 
 
-
 \*\*Live Site:\*\* \[Portfolio](https://kesar2208.github.io/kesar-portfolio/)  
-\*\*Resume:\*\* \[View or Download Resume](Resume.pdf)
-
-
 
 ---
-
-
 
 \## About Me
 
