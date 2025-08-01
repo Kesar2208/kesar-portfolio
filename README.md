@@ -8,8 +8,7 @@ This responsive website highlights my work in \*\*Web Development\*\*, \*\*Data 
 
 
 
-\*\*Live Site:\*\* \[kesar2208.github.io/kesar-portfolio](https://kesar2208.github.io/kesar-portfolio/)  
-
+\*\*Live Site:\*\* \[Portfolio](github.com/Kesar2208/kesar-portfolio)  
 \*\*Resume:\*\* \[View or Download Resume](Resume.pdf)
 
 
