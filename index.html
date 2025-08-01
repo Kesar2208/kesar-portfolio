@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kesar | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <h1>Kesar</h1>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <h2>I'm Kesar</h2>
+      <p>
+        Web Developer & Data Analyst passionate about building websites and
+        uncovering insights from data.
+      </p>
+      <a href="#projects" class="cta">View My Work</a>
+      <a href="Resume.pdf" download class="cta-download">Download Resume</a>
+    </section>
+
+    <section id="about">
+      <h3>About Me</h3>
+      <div class="about-container">
+        <img
+          src="imgs/ph.jpeg"
+          alt="Profile photo of Kesar"
+          class="about-img"
+          data-aos="fade-right"
+        />
+        <div class="about-text" data-aos="fade-left">
+          <p>
+            I’m a detail-oriented <strong>Web Developer</strong> and
+            <strong>Data Analyst</strong> with experience in e-commerce
+            analytics, dashboard creation, and data visualization using Excel,
+            Power BI, Tableau, SQL, and Python. Passionate about transforming
+            data into actionable insights and designing engaging, user-friendly
+            interfaces.
+          </p>
+          <p>
+            🎓 <strong>ITM (SLS) Baroda University</strong><br />
+            B.Tech in Computer Science (2021–2025) – <em>CGPA: 7.56</em>
+          </p>
+          <a href="#projects" class="cta">View Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h3>Projects</h3>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="data">Data Analyst</button>
+        <button class="filter-btn" data-filter="web">Web Design</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+      </div>
+
+      <div class="project-grid">
+        <div class="project-card" data-category="data" data-aos="zoom-in-up">
+          <h4>Amazon Sales Analysis</h4>
+          <p>Tools: Tableau, Excel</p>
+          <p>
+            Analyzed datasets using Excel and tableau to Visualized sales trends
+            and customer purchase behaviour.<br />Performed business-focused
+            sales trend analysis and category insights from raw Amazon data.
+          </p>
+          <a
+            href="https://github.com/Kesar2208/Amazon-Sales-Tableau-Dashboard"
+            target="_blank"
+            class="cta"
+            >View Project</a
+          >
+        </div>
+
+        <div class="project-card" data-category="data" data-aos="zoom-in-up">
+          <h4>AtliQ Hospitality Analysis</h4>
+          <p>Tools: Tableau, Excel</p>
+          <p>
+            Explored hospitality sector metrics using Tableau for business
+            insights.<br />
+            Built an interactive dashboard analyzing revenue, occupancy, and
+            ratings for hotel chains.
+          </p>
+          <a
+            href="https://docs.google.com/document/d/1xZQTWjqz8EcRAkX9yg51AXV1ph74_KSD/edit?usp=sharing&ouid=105008577387588188943&rtpof=true&sd=true"
+            target="_blank"
+            class="cta"
+            >View Project</a
+          >
+        </div>
+
+        <div class="project-card" data-category="data" data-aos="zoom-in-up">
+          <h4>FIFA World Cup Dashboard</h4>
+          <p>Tools: Tableau, Excel</p>
+          <p>
+            Explored datasets using Excel, Tableau to identify team and player
+            performance insights.<br />
+            Visualized country-wise goals, matches, and performance using
+            interactive dashboards.
+          </p>
+          <a
+            href="https://docs.google.com/document/d/1g7lFNqNLqpwXlAG3ogAXQr1x1UThyTAe/edit?usp=sharing&ouid=105008577387588188943&rtpof=true&sd=true"
+            target="_blank"
+            class="cta"
+            >View Project</a
+          >
+        </div>
+
+        <div class="project-card" data-category="ml" data-aos="zoom-in-up">
+          <h4>Movie Recommendation System</h4>
+          <p>Tools: Python, Scikit-learn</p>
+          <p>
+            Built a system using machine learning to suggest movies based on
+            user preferences.<br />
+            Analyze movie genres and calculates cosine similarity for
+            content-based filtering.<br />
+            The system efficiently recommends similar movies based on a given
+            movie title.
+          </p>
+          <a
+            href="https://docs.google.com/document/d/1Y5aIBnRDOful316Xm3CW2PpWGzQhQsXp/edit?usp=sharing&ouid=105008577387588188943&rtpof=true&sd=true"
+            target="_blank"
+            class="cta"
+            >View Project</a
+          >
+        </div>
+
+        <div class="project-card" data-category="ml" data-aos="zoom-in-up">
+          <h4>Final Year Project: Multi-Fuel Vehicle Sales Forecasting</h4>
+          <p>Tools: Python, Excel, Google Colab</p>
+          <p>
+            Developed a data-driven analytical model to forecast vehicle sales
+            and fuel station growth trends in Mumbai and Delhi. <br />
+            Forecasted vehicle sales and fuel station trends using ML and
+            time-series models.
+          </p>
+          <a
+            href="https://docs.google.com/document/d/1Q5sQIYJD3TxNApb5iTVMo3BHc2LZSIpy/edit?usp=sharing&ouid=105008577387588188943&rtpof=true&sd=true"
+            target="_blank"
+            class="cta"
+            >View Project</a
+          >
+        </div>
+
+        <div class="project-card" data-category="web" data-aos="zoom-in-up">
+          <h4>Shoe E-Commerce Website</h4>
+          <p>Tool: WordPress</p>
+          <p>
+            Developed an e-commerce website for selling shoes, customizing
+            themes and plugins for a smooth user experience.
+          </p>
+          <a
+            href="https://docs.google.com/document/d/1CkM-bmTwBH5IcODzXy1nQBkjBjEHykXr/edit?usp=sharing&ouid=105008577387588188943&rtpof=true&sd=true"
+            target="_blank"
+            class="cta"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card" data-category="web" data-aos="zoom-in-up">
+          <h4>Gym Website Design</h4>
+          <p>Tool: Figma</p>
+          <p>
+            Designed a UI/UX prototype for a gym website, ensuring modern
+            aesthetics and easy navigation.<br />Created a UI/UX design
+            prototype for a fitness brand website.
+          </p>
+          <a
+            href="https://www.figma.com/proto/z8KHWOssWHiPfxxjg0yt9k/Gym---Fitness-Website?node-id=2222-19&t=DdRbgtLrFrj8Mb1s-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2222%3A19"
+            target="_blank"
+            class="cta"
+            >View Project</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" data-aos="fade-up">
+      <h3>Skills</h3>
+      <ul class="skill-list">
+        <li>
+          <strong>Data Analytics:</strong>
+          <span class="highlight-orange"
+            >Excel, Power BI, Tableau, Google Sheets, SQL, Python (Pandas,
+            Numpy, Matplotlib, Scikit-Learn)</span
+          >
+        </li>
+        <li>
+          <strong>Web & UI/UX Development:</strong>
+          <span class="highlight-orange">
+            Figma, WordPress, HTML, CSS, JavaScript
+          </span>
+        </li>
+        <li>
+          <strong>Platforms:</strong>
+          <span class="highlight-orange"
+            >PowerPoint, Jupyter Notebook, Visual Studio Code, Google
+            Colab</span
+          >
+        </li>
+        <li>
+          <strong>AI Tools:</strong>
+          <span class="highlight-orange">ChatGPT, Prompt Engineering</span>
+        </li>
+        <li>
+          <strong>Soft Skills:</strong>
+          <span class="highlight-orange"
+            >Analytical Thinking, Problem Solving, Project/Time Management,
+            Quick learner, Attention to Detail, Team Collaboration,
+            Communication</span
+          >
+        </li>
+        <li>
+          <strong>Languages:</strong>
+          <span class="highlight-orange"
+            >Hindi, English, Gujarati, Marathi</span
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section id="experience" style="text-align: center" data-aos="fade-up">
+      <h3>Experience</h3>
+
+      <div
+        class="project-card"
+        style="display: inline-block; text-align: left; max-width: 800px"
+      >
+        <h4>Data Analytics Intern – CareerNaksha</h4>
+        <p>Dec 2024 – Mar 2025</p>
+        <p>
+          Used Excel for data preprocessing, structured datasets, and supported
+          data-driven decisions through reporting.
+        </p>
+        <a
+          href="https://drive.google.com/drive/folders/1iRHSj3GolbfLvEFnIXtqGv4UIoGmGvMR?usp=sharing"
+          target="_blank"
+          class="cta"
+          >View Project</a
+        >
+      </div>
+
+      <div
+        class="project-card"
+        style="display: inline-block; text-align: left; max-width: 800px"
+      >
+        <h4>Data Analytics Intern – Unified Mentor</h4>
+        <p>Remote | Jun – Aug 2024</p>
+        <p>
+          Created dashboards in Tableau for real-world datasets, enabling
+          performance and insight visualization.
+        </p>
+        <a
+          href="https://drive.google.com/drive/folders/1de45cIvSDygRB8OEWZvlJgLwgS6aR83V?usp=sharing"
+          target="_blank"
+          class="cta"
+          >View Project</a
+        >
+      </div>
+    </section>
+
+    <section id="certifications" data-aos="fade-up">
+      <h3>Certifications</h3>
+      <div class="project-grid">
+        <div class="project-card">
+          <img
+            src="imgs/Deloitte.png"
+            alt="Deloitte Certificate"
+            width="100%"
+          />
+          <h4><strong>Data Analytics Simulation</strong></h4>
+          <p>
+            Build a Tableau dashboard to visualize factory downtime.<br />
+            Used Excel to classify and analyze employee equality scores.<br />
+            Solve real-world business challenges using forensic data techniques
+          </p>
+        </div>
+        <div class="project-card">
+          <img src="imgs/Figma.png" alt="Figma Certificate" width="100%" />
+          <h4><strong>Figma UI/UX</strong></h4>
+          <p>
+            Gained hands-on experience with Figma for UI/UX design.<br />
+            Learned how to create wireframe, prototype and mockups using
+            build-in design tools and plugins.<br />
+          </p>
+        </div>
+        <div class="project-card">
+          <img
+            src="imgs/WordPress.png"
+            alt="WordPress Certificate"
+            width="100%"
+          />
+          <h4><strong>WordPress</strong></h4>
+          <p>
+            Completed comprehensive training covering WordPress installation,
+            themes, plugins, content management, SEO basics, and site
+            customization.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" data-aos="flip-up">
+      <h3>Contact Me</h3>
+      <form
+        action="https://formsubmit.co/bareliwalakesar4262@gmail.com"
+        method="POST"
+        class="contact-form"
+        id="contactForm"
+      >
+        <input
+          type="hidden"
+          name="_next"
+          value="https://kesar2208.github.io/kesar-portfolio/thank-you.html"
+        />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="5"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="social-links">
+        <span>bareliwalakesar4262@gmail.com</span>
+        <a href="https://github.com/Kesar2208/kesar-portfolio" target="_blank"
+          >GitHub</a
+        >
+        <a href="www.linkedin.com/in/kesar-bareliwala-467b472a8" target="_blank"
+          >LinkedIn</a
+        >
+      </div>
+    </section>
+
+    <footer>
+      <p>Designed by Kesar | © 2025</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        offset: 100,
+        once: true,
+      });
+    </script>
+
+    <script>
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const projectGrid = document.querySelector("#projects .project-grid");
+      const projectCards = projectGrid.querySelectorAll(".project-card");
+
+      filterButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelector(".filter-btn.active")
+            .classList.remove("active");
+          btn.classList.add("active");
+
+          const filter = btn.getAttribute("data-filter");
+
+          projectCards.forEach((card) => {
+            const category = card.getAttribute("data-category");
+
+            if (filter === "all" || category === filter) {
+              card.style.display = "block";
+            } else {
+              card.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          alert("Thank you! Your message has been sent successfully.");
+        });
+    </script>
+  </body>
+</html>
