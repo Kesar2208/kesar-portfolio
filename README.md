@@ -79,12 +79,10 @@ My portfolio combines **data-driven dashboards**, **machine learning apps**, and
 
 ## Contact Me
 
-Email: \*\*bareliwalakesar4262@gmail.com\*\*  
+Email: **bareliwalakesar4262@gmail.com**
 
 [LinkedIn](https://www.linkedin.com/in/kesar-bareliwala-467b472a8)  
 
 [GitHub Profile](https://github.com/Kesar2208)
 
 ---
-
-
